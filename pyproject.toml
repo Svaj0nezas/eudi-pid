@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -7,12 +7,17 @@ name = "eudi-pid"
 version = "0.1.0"
 description = "Request and verify a German EUDI PID (mdoc) over OpenID4VP 1.0"
 readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
 requires-python = ">=3.11"
 dependencies = [
     "cryptography>=42",
     "jwcrypto>=1.5",
     "cbor2>=5.6",
 ]
+
+[project.urls]
+Source = "https://github.com/Svaj0nezas/eudi-pid"
 
 [project.optional-dependencies]
 qr = ["qrcode>=7.4"]

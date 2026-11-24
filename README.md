@@ -13,8 +13,8 @@ Its dependencies are `cryptography`, `jwcrypto` and `cbor2`, plus `qrcode` with 
 ## Install
 
 ```bash
-pip install -e ../eudi-pid                       # while developing alongside
-pip install "eudi-pid[qr] @ git+https://github.com/<you>/eudi-pid@v0.1.0"   # pinned, once pushed
+pip install "eudi-pid[qr] @ git+https://github.com/Svaj0nezas/eudi-pid@v0.1.0"   # pinned
+pip install -e "../eudi-pid[qr]"                 # a local clone, while changing it alongside
 ```
 
 ## Quick start
@@ -104,3 +104,7 @@ python -m unittest discover -s tests -v
 ```
 
 `tests/data/pid-provider-trust-list.jwt` is a public snapshot of the sandbox's trust list.
+
+## License
+
+MIT: see [LICENSE](LICENSE).
